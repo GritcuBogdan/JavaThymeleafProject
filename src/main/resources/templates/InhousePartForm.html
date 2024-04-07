@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Part Form</title>
+</head>
+<body>
+<h1>Inhouse Part Detail</h1>
+<form action="@{/showFormAddInPart}" th:object="${inhousepart}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+
+    <p>
+        <label>Name: </label>
+        <input type="text" th:field="*{name}" class="form-control mb-4 col-4"/>
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+    </p>
+
+
+    <p>
+        <label>Price: </label>
+        <input type="text" th:field="*{price}" class="form-control mb-4 col-4"/>
+        <span th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Price Error</span>
+    </p>
+
+    <p>
+        <label>Inventory: </label>
+        <input type="text" th:field="*{inv}" class="form-control mb-4 col-4"/>
+        <span th:if="${#fields.hasErrors('inv')}" th:errors="*{inv}">Inventory Error</span>
+    </p>
+
+    <p>
+        <label>Min: </label>
+        <input type="number" th:field="*{min}" class="form-control mb-4 col-4"/>
+        <span th:if="${#fields.hasErrors('min')}" th:errors="*{min}">Min Error</span>
+    </p>
+
+    <p>
+        <label>Max: </label>
+        <input type="number" th:field="*{max}" class="form-control mb-4 col-4"/>
+        <span th:if="${#fields.hasErrors('max')}" th:errors="*{max}">Max Error</span>
+    </p>
+
+    <p>
+        <label>Part ID: </label>
+        <input type="text" th:field="*{partId}" class="form-control mb-4 col-4"/>
+        <span th:if="${#fields.hasErrors('partId')}" th:errors="*{partId}">Part ID Error</span>
+    </p>
+
+    <p><input type="submit" value="Submit" class="btn btn-primary"/></p>
+</form>
+
+<a th:href="@{/mainscreen}">Link to Main Screen</a>
+</body>
+</html>

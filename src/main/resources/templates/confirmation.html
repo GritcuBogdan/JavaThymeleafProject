@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inhouse Part Added Confirmation</title>
+</head>
+<body>
+<h1>Part Added Successfully!</h1>
+<p>Here's a summary of the added part:</p>
+<ul>
+    <li>Name: ${addedPart.name}</li>
+    <li>ID: ${addedPart.id}</li>
+</ul>
+<p>What would you like to do next?</p>
+<ul>
+    <li><a href="#">Add another Inhouse Part</a></li>
+    <li><a href="@{/showFormAddInPart}">Add another Inhouse Part</a></li> <!-- Update this link -->
+    <li><a href="@{/}">Return to Main Screen</a></li> <!-- Update this link -->
+</ul>
+</body>
+</html>

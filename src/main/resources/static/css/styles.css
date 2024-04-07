@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #343a40;
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="button"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
